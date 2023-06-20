@@ -1,0 +1,7 @@
+const path = require('path');
+//aqui eu informo as credenciais de acesso ao banco de dados 
+//para que eu possa criar o banco e as tabelas
+module.exports = {
+    config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations'),
+};
